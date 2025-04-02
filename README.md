@@ -177,3 +177,7 @@ public interface NoteColumns {
          */
         public static final String DATA5 = "data5";
     }
+        public static class DataConstants {
+        public static final String NOTE = TextNote.CONTENT_ITEM_TYPE;
+        public static final String CALL_NOTE = CallNote.CONTENT_ITEM_TYPE;
+    }
