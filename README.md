@@ -104,3 +104,76 @@ public interface NoteColumns {
          */
         public static final String VERSION = "version";
     }
+     public interface DataColumns {
+        /**
+         * The unique ID for a row
+         * <P> Type: INTEGER (long) </P>
+         */
+        public static final String ID = "_id";
+
+        /**
+         * The MIME type of the item represented by this row.
+         * <P> Type: Text </P>
+         */
+        public static final String MIME_TYPE = "mime_type";
+
+        /**
+         * The reference id to note that this data belongs to
+         * <P> Type: INTEGER (long) </P>
+         */
+        public static final String NOTE_ID = "note_id";
+
+        /**
+         * Created data for note or folder
+         * <P> Type: INTEGER (long) </P>
+         */
+        public static final String CREATED_DATE = "created_date";
+
+        /**
+         * Latest modified date
+         * <P> Type: INTEGER (long) </P>
+         */
+        public static final String MODIFIED_DATE = "modified_date";
+
+        /**
+         * Data's content
+         * <P> Type: TEXT </P>
+         */
+        public static final String CONTENT = "content";
+
+
+        /**
+         * Generic data column, the meaning is {@link #MIMETYPE} specific, used for
+         * integer data type
+         * <P> Type: INTEGER </P>
+         */
+        public static final String DATA1 = "data1";
+
+        /**
+         * Generic data column, the meaning is {@link #MIMETYPE} specific, used for
+         * integer data type
+         * <P> Type: INTEGER </P>
+         */
+        public static final String DATA2 = "data2";
+
+        /**
+         * Generic data column, the meaning is {@link #MIMETYPE} specific, used for
+         * TEXT data type
+         * <P> Type: TEXT </P>
+         */
+        public static final String DATA3 = "data3";
+
+        /**
+         * Generic data column, the meaning is {@link #MIMETYPE} specific, used for
+         * TEXT data type
+         * <P> Type: TEXT </P>
+         */
+        public static final String DATA4 = "data4";
+
+        /**
+         * Generic data column, the meaning is {@link #MIMETYPE} specific, used for
+         * TEXT data type
+         * <P> Type: TEXT </P>
+         */
+        public static final String DATA5 = "data5";
+    }
